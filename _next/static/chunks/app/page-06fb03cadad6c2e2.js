@@ -1,1 +1,886 @@
-(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[931],{5105:function(e,t,r){Promise.resolve().then(r.bind(r,5933)),Promise.resolve().then(r.bind(r,1244)),Promise.resolve().then(r.bind(r,710)),Promise.resolve().then(r.bind(r,7101)),Promise.resolve().then(r.bind(r,5457)),Promise.resolve().then(r.bind(r,3577)),Promise.resolve().then(r.bind(r,3287)),Promise.resolve().then(r.bind(r,1886)),Promise.resolve().then(r.bind(r,7472)),Promise.resolve().then(r.bind(r,4576)),Promise.resolve().then(r.bind(r,5655)),Promise.resolve().then(r.bind(r,4971)),Promise.resolve().then(r.bind(r,4630)),Promise.resolve().then(r.bind(r,3953)),Promise.resolve().then(r.bind(r,1793)),Promise.resolve().then(r.bind(r,6070)),Promise.resolve().then(r.bind(r,2756)),Promise.resolve().then(r.bind(r,1094)),Promise.resolve().then(r.bind(r,828)),Promise.resolve().then(r.bind(r,3641)),Promise.resolve().then(r.bind(r,4184)),Promise.resolve().then(r.bind(r,1492)),Promise.resolve().then(r.bind(r,7239)),Promise.resolve().then(r.bind(r,5926)),Promise.resolve().then(r.bind(r,3252)),Promise.resolve().then(r.t.bind(r,2972,23)),Promise.resolve().then(r.bind(r,3211)),Promise.resolve().then(r.bind(r,2030)),Promise.resolve().then(r.bind(r,9489)),Promise.resolve().then(r.bind(r,1909)),Promise.resolve().then(r.bind(r,9685)),Promise.resolve().then(r.bind(r,6950)),Promise.resolve().then(r.bind(r,4016)),Promise.resolve().then(r.bind(r,9564)),Promise.resolve().then(r.bind(r,5140))},3211:function(e,t,r){"use strict";r.d(t,{AnimatedNumber:function(){return j}});var n=r(7437),a=r(2265);r(3223);let s={some:0,all:1};var i=r(3078),l=r(5750),o=r(3576);function d(e){let t=(0,o.h)(()=>(0,i.BX)(e)),{isStatic:r}=(0,a.useContext)(l._);if(r){let[,r]=(0,a.useState)(e);(0,a.useEffect)(()=>t.on("change",r),[])}return t}var c=r(3999),u=r(1534),m=r(3172),g=r(5414);function f(e){return"number"==typeof e?e:parseFloat(e)}var h=r(8843);let v=e=>e&&"object"==typeof e&&e.mix,p=e=>v(e)?e.mix:void 0;function x(e,t){let r=d(t()),n=()=>r.set(t());return n(),(0,u.L)(()=>{let t=()=>g.Wi.preRender(n,!1,!0),r=e.map(e=>e.on("change",t));return()=>{r.forEach(e=>e()),(0,g.Pn)(n)}}),r}function b(e,t){let r=(0,o.h)(()=>[]);return x(e,()=>{r.length=0;let n=e.length;for(let t=0;t<n;t++)r[t]=e[t].get();return t(r)})}var y=r(7474);function j(e){let{start:t,end:r,decimals:o=0}=e,v=(0,a.useRef)(null),j=function(e,{root:t,margin:r,amount:n,once:i=!1}={}){let[l,o]=(0,a.useState)(!1);return(0,a.useEffect)(()=>{if(!e.current||i&&l)return;let a={root:t&&t.current||void 0,margin:r,amount:n};return function(e,t,{root:r,margin:n,amount:a="some"}={}){var i;let l=("string"==typeof(i=e)?i=document.querySelectorAll(i):i instanceof Element&&(i=[i]),Array.from(i||[])),o=new WeakMap,d=new IntersectionObserver(e=>{e.forEach(e=>{let r=o.get(e.target);if(!!r!==e.isIntersecting){if(e.isIntersecting){let r=t(e);"function"==typeof r?o.set(e.target,r):d.unobserve(e.target)}else r&&(r(e),o.delete(e.target))}})},{root:r,rootMargin:n,threshold:"number"==typeof a?a:s[a]});return l.forEach(e=>d.observe(e)),()=>d.disconnect()}(e.current,()=>(o(!0),i?void 0:()=>o(!1)),a)},[t,e,r,i,n]),l}(v,{once:!0,amount:.5}),k=d(t),w=function(e,t,r,n){if("function"==typeof e)return function(e){i.S1.current=[],e();let t=x(i.S1.current,e);return i.S1.current=void 0,t}(e);let a="function"==typeof t?t:function(...e){let t=!Array.isArray(e[0]),r=t?0:-1,n=e[0+r],a=e[1+r],s=e[2+r],i=e[3+r],l=(0,h.s)(a,s,{mixer:p(s[0]),...i});return t?l(n):l}(t,void 0,void 0);return Array.isArray(e)?b(e,a):b([e],([e])=>a(e))}(function(e,t={}){let{isStatic:r}=(0,a.useContext)(l._),n=(0,a.useRef)(null),s=d((0,c.i)(e)?f(e.get()):e),i=(0,a.useRef)(s.get()),o=(0,a.useRef)(()=>{}),h=()=>{let e=n.current;e&&0===e.time&&e.sample(g.frameData.delta),v(),n.current=(0,m.y)({keyframes:[s.get(),i.current],velocity:s.getVelocity(),type:"spring",restDelta:.001,restSpeed:.01,...t,onUpdate:o.current})},v=()=>{n.current&&n.current.stop()};return(0,a.useInsertionEffect)(()=>s.attach((e,t)=>r?t(e):(i.current=e,o.current=t,g.Wi.update(h),s.get()),v),[JSON.stringify(t)]),(0,u.L)(()=>{if((0,c.i)(e))return e.on("change",e=>s.set(f(e)))},[s]),s}(k,{damping:30,stiffness:100}),e=>e.toFixed(o));return(0,a.useEffect)(()=>{k.set(j?r:t)},[t,r,j,k]),(0,n.jsx)(y.E.span,{ref:v,children:w})}},2030:function(e,t,r){"use strict";r.d(t,{BentoCard:function(){return l}});var n=r(7437),a=r(1994),s=r(7474),i=r(1080);function l(e){let{dark:t=!1,className:r="",eyebrow:l,title:o,description:d,graphic:c,fade:u=[]}=e;return(0,n.jsxs)(s.E.div,{initial:"idle",whileHover:"active",variants:{idle:{},active:{}},"data-dark":t?"true":void 0,className:(0,a.W)(r,"group relative flex flex-col overflow-hidden rounded-lg","bg-white shadow-sm ring-1 ring-black/5","data-[dark]:bg-gray-800 data-[dark]:ring-white/15"),children:[(0,n.jsxs)("div",{className:"relative h-80 shrink-0",children:[c,u.includes("top")&&(0,n.jsx)("div",{className:"absolute inset-0 bg-gradient-to-b from-white to-50% group-data-[dark]:from-gray-800 group-data-[dark]:from-[-25%]"}),u.includes("bottom")&&(0,n.jsx)("div",{className:"absolute inset-0 bg-gradient-to-t from-white to-50% group-data-[dark]:from-gray-800 group-data-[dark]:from-[-25%]"})]}),(0,n.jsxs)("div",{className:"relative p-10",children:[(0,n.jsx)(i.pm,{as:"h3",dark:t,children:l}),(0,n.jsx)("p",{className:"mt-1 text-2xl/8 font-medium tracking-tight text-gray-950 group-data-[dark]:text-white",children:o}),(0,n.jsx)("p",{className:"mt-2 max-w-[600px] text-sm/6 text-gray-600 group-data-[dark]:text-gray-400",children:d})]})]})}},9489:function(e,t,r){"use strict";r.d(t,{default:function(){return u}});var n=r(7437),a=r(1886),s=r(2265);let i=s.forwardRef(function(e,t){let{title:r,titleId:n,...a}=e;return s.createElement("svg",Object.assign({xmlns:"http://www.w3.org/2000/svg",fill:"none",viewBox:"0 0 24 24",strokeWidth:1.5,stroke:"currentColor","aria-hidden":"true","data-slot":"icon",ref:t,"aria-labelledby":n},a),r?s.createElement("title",{id:n},r):null,s.createElement("path",{strokeLinecap:"round",strokeLinejoin:"round",d:"M12 6v12m6-6H6"}))}),l=s.forwardRef(function(e,t){let{title:r,titleId:n,...a}=e;return s.createElement("svg",Object.assign({xmlns:"http://www.w3.org/2000/svg",fill:"none",viewBox:"0 0 24 24",strokeWidth:1.5,stroke:"currentColor","aria-hidden":"true","data-slot":"icon",ref:t,"aria-labelledby":n},a),r?s.createElement("title",{id:n},r):null,s.createElement("path",{strokeLinecap:"round",strokeLinejoin:"round",d:"M18 12H6"}))});var o=r(7476),d=r(1080);let c=[{question:"Varf\xf6r ska jag inte bara anst\xe4lla en CRM-ansvarig?",answer:"Bra fr\xe5ga! F\xf6r det f\xf6rsta \xe4r skickliga CRM-specialister eftertraktade, och om du hittar en s\xe5 blir den totala kostnaden (l\xf6n, pension, kontorsutrymme, arbetsredskap, semester etc.) oftast mer \xe4n det dubbla j\xe4mf\xf6rt med MessageButler.\n\nDessutom kanske du inte alltid har tillr\xe4ckligt med kundutskick att g\xf6ra f\xf6r att h\xe5lla personen sysselsatt, vilket inneb\xe4r att du betalar f\xf6r tid som inte utnyttjas. Med v\xe5rt m\xe5nadsabonnemang kan du pausa och \xe5teruppta din prenumeration n\xe4r som helst."},{question:"Beh\xf6ver vi installera n\xe5gra system?",answer:"Nej. Vi loggar in p\xe5 dina befintliga CRM- och analyssystem f\xf6r att hantera utskicken."},{question:"Vad h\xe4nder om jag tycker att ett meddelande inte \xe4r tillr\xe4ckligt bra?",answer:"Ingen fara, vi justerar tills du \xe4r 100 % n\xf6jd och schemal\xe4gger utskicket f\xf6rst efter att du har godk\xe4nt det."},{question:"Finns det n\xe5gon gr\xe4ns f\xf6r hur m\xe5nga meddelanden vi kan skicka?",answer:"Du kan beg\xe4ra s\xe5 m\xe5nga utskick du vill, och vi f\xe4rdigst\xe4ller dem i tur och ordning. Du kan f\xf6rv\xe4nta dig att ett meddelande \xe4r klart inom 48 timmar.\n\nVi har ingen gr\xe4ns f\xf6r antalet mottagare. Oavsett om du vill skicka ett meddelande till 10 personer eller 10 miljoner - vi l\xf6ser det."},{question:"Hur administreras utskicken?",answer:"All administration sker via en Notion-board som du f\xe5r tillg\xe5ng till vid start. H\xe4r l\xe4gger du in nya utskick och har koll p\xe5 statusen under hela processen – enkelt och \xf6versk\xe5dligt."},{question:"Vem utf\xf6r arbetet?",answer:(0,n.jsxs)(n.Fragment,{children:["Tro det eller ej, MessageButler \xe4r en enmansbyr\xe5. Detta inneb\xe4r att du arbetar direkt med mig, Pontus.",(0,n.jsx)("br",{}),(0,n.jsx)("br",{}),"Min LinkedIn: "," ",(0,n.jsx)("a",{href:"https://www.linkedin.com/in/pontus-andersson-a5a304a4/",target:"_blank",rel:"noopener noreferrer",className:"font-semibold text-indigo-600 hover:text-indigo-500",children:"Pontus Andersson"})]})},{question:"\xc4r det n\xe5gon bindningstid?",answer:"Nej. Du betalar l\xf6pande f\xf6r en m\xe5nad i taget och kan pausa eller avsluta n\xe4r som helst."},{question:"Kan du f\xf6rklara hur pausfunktionen fungerar?",answer:"Absolut! Du betalar i f\xf6rskott f\xf6r en m\xe5nad i taget och kan pausa din prenumeration n\xe4r som helst. Till exempel, om du har anv\xe4nt tj\xe4nsten i tv\xe5 veckor och v\xe4ljer att pausa, s\xe5 finns de \xe5terst\xe5ende tv\xe5 veckorna kvar att anv\xe4nda vid ett senare tillf\xe4lle. Du kan pausa max fyra g\xe5nger om \xe5ret."},{question:"Vilken mjukvara anv\xe4nder ni?",answer:"Vi anpassar oss till ditt CRM-system (Klaviyo, Mailchimp, Voyado, etc.) och analysverktyg (Google Analytics, Matomo, etc.)\n\nF\xf6r design anv\xe4nder vi fr\xe4mst Figma. F\xf6r djupare analys anv\xe4nds en rad verktyg, men fr\xe4mst Python/Pandas."}];function u(){return(0,n.jsxs)(o.W,{className:"py-32",children:[(0,n.jsx)(d.X6,{as:"h1",id:"faq",children:"Vanliga fr\xe5gor"}),(0,n.jsxs)("section",{className:"mt-6 grid grid-cols-1 lg:grid-cols-12 lg:gap-12",children:[(0,n.jsx)("div",{className:"max-w-lg lg:col-span-5",children:(0,n.jsxs)("p",{className:"mt-6 text-sm/6 text-gray-600",children:["Kan du inte hitta svaret p\xe5 din fr\xe5ga? ",(0,n.jsx)("br",{}),"H\xf6r av dig till"," ",(0,n.jsx)("a",{href:"mailto:pontus@messagebutler.agency",className:"font-semibold text-indigo-600 hover:text-indigo-500",children:"pontus@messagebutler.agency"}),"."]})}),(0,n.jsx)("div",{className:"max-lg:mt-16 lg:col-span-7",children:(0,n.jsx)("dl",{className:"space-y-4 divide-y divide-gray-900/10",children:c.map(e=>(0,n.jsx)(a.Disclosure,{as:"div",className:"pt-4",children:t=>{let{open:r}=t;return(0,n.jsxs)(n.Fragment,{children:[(0,n.jsx)("dt",{children:(0,n.jsxs)(a.DisclosureButton,{className:"group flex w-full items-start justify-between text-left text-gray-900",onClick:()=>{!r&&window.plausible&&window.plausible("FAQQuestionOpened",{props:{question:e.question}})},children:[(0,n.jsx)("span",{className:"text-1xl font-medium tracking-tight",children:e.question}),(0,n.jsxs)("span",{className:"ml-6 flex h-7 items-center",children:[(0,n.jsx)(i,{"aria-hidden":"true",className:"size-6 group-data-[open]:hidden"}),(0,n.jsx)(l,{"aria-hidden":"true",className:"size-6 group-[&:not([data-open])]:hidden"})]})]})}),(0,n.jsx)(a.DisclosurePanel,{as:"dd",className:"mt-2 pr-12",children:(0,n.jsx)("div",{className:"mt-3 text-sm/6 text-gray-600",children:e.answer})})]})}},e.question))})})]})]})}},9685:function(e,t,r){"use strict";r.d(t,{LinkedAvatars:function(){return m}});var n=r(7437),a=r(2265);let s=a.forwardRef(function({title:e,titleId:t,...r},n){return a.createElement("svg",Object.assign({xmlns:"http://www.w3.org/2000/svg",viewBox:"0 0 16 16",fill:"currentColor","aria-hidden":"true","data-slot":"icon",ref:n,"aria-labelledby":t},r),e?a.createElement("title",{id:t},e):null,a.createElement("path",{fillRule:"evenodd",d:"M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353 4.493-6.74a.75.75 0 0 1 1.04-.207Z",clipRule:"evenodd"}))});var i=r(1994),l=r(7474);let o={duration:.75,repeat:1/0,repeatDelay:1.25};function d(){return(0,n.jsx)("svg",{viewBox:"0 0 500 500",fill:"none",className:(0,i.W)("col-start-1 row-start-1 size-full","[mask-composite:intersect] [mask-image:linear-gradient(to_bottom,black_90%,transparent),radial-gradient(circle,rgba(0,0,0,1)_0%,rgba(0,0,0,0)_100%)]"),children:Array.from(Array(42).keys()).map(e=>(0,n.jsx)(l.E.circle,{variants:{idle:{scale:1,strokeOpacity:.15},active:{scale:[1,1.08,1],strokeOpacity:[.15,.3,.15],transition:{...o,delay:.05*e}}},cx:"250",cy:"250",r:14*e+4,className:"stroke-white"},e))})}function c(){return(0,n.jsx)("div",{className:"z-10 col-start-1 row-start-1 flex items-center justify-center",children:(0,n.jsx)(l.E.div,{variants:{idle:{scale:1},active:{scale:[1,1.15,1],transition:{...o,duration:.75}}},className:"flex size-6 items-center justify-center rounded-full bg-gradient-to-t from-green-500 to-green-300 shadow",children:(0,n.jsx)(s,{className:"size-4 fill-white"})})})}function u(){return(0,n.jsx)("div",{className:"z-10 col-start-1 row-start-1",children:(0,n.jsxs)("div",{className:"mx-auto flex size-full max-w-md items-center justify-around",children:[(0,n.jsx)("img",{alt:"",src:"/linked-avatars/me.jpg",className:"size-20 rounded-full bg-white/15 ring-4 ring-white/10"}),(0,n.jsx)("img",{alt:"",src:"/linked-avatars/manager.jpg",className:"size-20 rounded-full bg-white/15 ring-4 ring-white/10"})]})})}function m(){return(0,n.jsxs)("div",{"aria-hidden":"true",className:"isolate mx-auto grid h-full grid-cols-1",children:[(0,n.jsx)(d,{}),(0,n.jsx)(u,{}),(0,n.jsx)(c,{})]})}},6950:function(e,t,r){"use strict";r.r(t),r.d(t,{LogoCluster:function(){return u}});var n=r(7437),a=r(1994),s=r(7474),i=r(4016);function l(e){let{size:t,delay:r,opacity:i}=e;return(0,n.jsx)(s.E.div,{variants:{idle:{width:"".concat(t,"px"),height:"".concat(t,"px")},active:{width:["".concat(t,"px"),"".concat(t+10,"px"),"".concat(t,"px")],height:["".concat(t,"px"),"".concat(t+10,"px"),"".concat(t,"px")],transition:{duration:.75,repeat:1/0,repeatDelay:1.25,ease:"easeInOut",delay:r}}},style:{"--opacity":i},className:(0,a.W)("absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full","bg-[radial-gradient(circle,transparent_25%,color-mix(in_srgb,_theme(colors.blue.500)_var(--opacity),transparent)_100%)]","ring-1 ring-inset ring-blue-500/[8%]")})}function o(){return(0,n.jsxs)("div",{className:"absolute inset-0",children:[(0,n.jsx)(l,{size:528,opacity:"3%",delay:.45}),(0,n.jsx)(l,{size:400,opacity:"5%",delay:.3}),(0,n.jsx)(l,{size:272,opacity:"5%",delay:.15}),(0,n.jsx)(l,{size:144,opacity:"10%",delay:0}),(0,n.jsx)("div",{className:"absolute inset-0 bg-gradient-to-t from-white to-35%"})]})}function d(){return(0,n.jsx)("div",{className:"absolute left-44 top-32 flex size-16 items-center justify-center rounded-full bg-white shadow ring-1 ring-black/5",children:(0,n.jsx)(i.Mark,{className:"h-9 fill-black"})})}function c(e){let{src:t,left:r,top:a,hover:i}=e;return(0,n.jsx)(s.E.img,{variants:{idle:{x:0,y:0,rotate:0},active:{x:[0,i.x,0],y:[0,i.y,0],rotate:[0,i.rotate,0],transition:{duration:.75,repeat:1/0,repeatDelay:1.25,ease:"easeInOut",delay:i.delay}}},alt:"",src:t,style:{left:r,top:a},className:"absolute size-16 rounded-full bg-white shadow ring-1 ring-black/5"})}function u(){return(0,n.jsxs)("div",{"aria-hidden":"true",className:"relative h-full overflow-hidden",children:[(0,n.jsx)(o,{}),(0,n.jsxs)("div",{className:"absolute left-1/2 h-full w-[26rem] -translate-x-1/2",children:[(0,n.jsx)(d,{}),(0,n.jsx)(c,{src:"/logo-cluster/career-builder.svg",left:360,top:144,hover:{x:6,y:1,rotate:5,delay:.38}}),(0,n.jsx)(c,{src:"/logo-cluster/dribbble.svg",left:285,top:20,hover:{x:4,y:-5,rotate:6,delay:.3}}),(0,n.jsx)(c,{src:"/logo-cluster/glassdoor.svg",left:255,top:210,hover:{x:3,y:5,rotate:7,delay:.2}}),(0,n.jsx)(c,{src:"/logo-cluster/linkedin.svg",left:144,top:40,hover:{x:-2,y:-5,rotate:-6,delay:.15}}),(0,n.jsx)(c,{src:"/logo-cluster/upwork.svg",left:36,top:56,hover:{x:-4,y:-5,rotate:-6,delay:.35}}),(0,n.jsx)(c,{src:"/logo-cluster/we-work-remotely.svg",left:96,top:176,hover:{x:-3,y:5,rotate:3,delay:.15}})]})]})}},9564:function(e,t,r){"use strict";r.d(t,{Map:function(){return i}});var n=r(7437),a=r(7474);function s(e){let{src:t,top:r,offset:s,delay:i}=e;return(0,n.jsxs)(a.E.div,{variants:{idle:{scale:0,opacity:0,rotateX:0,rotate:0,y:0},active:{y:[-20,0,4,0],scale:[.75,1],opacity:[0,1]}},transition:{duration:.25,delay:i,ease:"easeOut"},style:{"--offset":"".concat(s,"px"),top:r},className:"absolute left-[calc(50%+var(--offset))] size-[38px] drop-shadow-[0_3px_1px_rgba(0,0,0,.15)]",children:[(0,n.jsxs)("svg",{fill:"none",viewBox:"0 0 38 38",className:"absolute size-full",children:[(0,n.jsx)("path",{d:"M29.607 5.193c5.858 5.857 5.858 15.355 0 21.213l-9.9 9.9-.707.706-.708-.708-9.899-9.898c-5.857-5.858-5.857-15.356 0-21.213 5.858-5.858 15.356-5.858 21.214 0Z",className:"fill-black/5"}),(0,n.jsx)("path",{d:"m28.9 25.698-9.9 9.9-9.9-9.9C3.634 20.232 3.634 11.367 9.1 5.9 14.569.432 23.433.432 28.9 5.9c5.467 5.468 5.467 14.332 0 19.8Z",className:"fill-white"})]}),(0,n.jsx)("img",{alt:"",src:t,className:"absolute left-[7px] top-[4px] size-6 rounded-full"})]})}function i(){return(0,n.jsxs)("div",{"aria-hidden":"true",className:"relative size-full",children:[(0,n.jsx)("div",{className:"absolute inset-0 bg-[url(/world_map.png)] bg-[length:591px_287px] bg-[center_-0px] bg-no-repeat [mask-image:linear-gradient(to_bottom,black_50%,transparent)]"}),(0,n.jsxs)("div",{className:"absolute inset-0",children:[(0,n.jsx)(s,{src:"/map/1.jpg",top:50,offset:-190,delay:.15}),(0,n.jsx)(s,{src:"/map/2.jpg",top:80,offset:-250,delay:.4}),(0,n.jsx)(s,{src:"/map/3.jpg",top:10,offset:-25,delay:.3}),(0,n.jsx)(s,{src:"/map/4.jpg",top:200,offset:190,delay:.6}),(0,n.jsx)(s,{src:"/map/5.jpg",top:104,offset:-80,delay:.8})]})]})}}},function(e){e.O(0,[501,3,807,971,117,744],function(){return e(e.s=5105)}),_N_E=e.O()}]);
+(self.webpackChunk_N_E = self.webpackChunk_N_E || []).push([
+  [931],
+  {
+    5105: function (e, t, r) {
+      Promise.resolve().then(r.bind(r, 5933)),
+        Promise.resolve().then(r.bind(r, 1244)),
+        Promise.resolve().then(r.bind(r, 710)),
+        Promise.resolve().then(r.bind(r, 7101)),
+        Promise.resolve().then(r.bind(r, 5457)),
+        Promise.resolve().then(r.bind(r, 3577)),
+        Promise.resolve().then(r.bind(r, 3287)),
+        Promise.resolve().then(r.bind(r, 1886)),
+        Promise.resolve().then(r.bind(r, 7472)),
+        Promise.resolve().then(r.bind(r, 4576)),
+        Promise.resolve().then(r.bind(r, 5655)),
+        Promise.resolve().then(r.bind(r, 4971)),
+        Promise.resolve().then(r.bind(r, 4630)),
+        Promise.resolve().then(r.bind(r, 3953)),
+        Promise.resolve().then(r.bind(r, 1793)),
+        Promise.resolve().then(r.bind(r, 6070)),
+        Promise.resolve().then(r.bind(r, 2756)),
+        Promise.resolve().then(r.bind(r, 1094)),
+        Promise.resolve().then(r.bind(r, 828)),
+        Promise.resolve().then(r.bind(r, 3641)),
+        Promise.resolve().then(r.bind(r, 4184)),
+        Promise.resolve().then(r.bind(r, 1492)),
+        Promise.resolve().then(r.bind(r, 7239)),
+        Promise.resolve().then(r.bind(r, 5926)),
+        Promise.resolve().then(r.bind(r, 3252)),
+        Promise.resolve().then(r.t.bind(r, 2972, 23)),
+        Promise.resolve().then(r.bind(r, 3211)),
+        Promise.resolve().then(r.bind(r, 2030)),
+        Promise.resolve().then(r.bind(r, 9489)),
+        Promise.resolve().then(r.bind(r, 1909)),
+        Promise.resolve().then(r.bind(r, 9685)),
+        Promise.resolve().then(r.bind(r, 6950)),
+        Promise.resolve().then(r.bind(r, 4016)),
+        Promise.resolve().then(r.bind(r, 9564)),
+        Promise.resolve().then(r.bind(r, 5140));
+    },
+    3211: function (e, t, r) {
+      "use strict";
+      r.d(t, {
+        AnimatedNumber: function () {
+          return j;
+        },
+      });
+      var n = r(7437),
+        a = r(2265);
+      r(3223);
+      let s = { some: 0, all: 1 };
+      var i = r(3078),
+        l = r(5750),
+        o = r(3576);
+      function d(e) {
+        let t = (0, o.h)(() => (0, i.BX)(e)),
+          { isStatic: r } = (0, a.useContext)(l._);
+        if (r) {
+          let [, r] = (0, a.useState)(e);
+          (0, a.useEffect)(() => t.on("change", r), []);
+        }
+        return t;
+      }
+      var c = r(3999),
+        u = r(1534),
+        m = r(3172),
+        g = r(5414);
+      function f(e) {
+        return "number" == typeof e ? e : parseFloat(e);
+      }
+      var h = r(8843);
+      let v = (e) => e && "object" == typeof e && e.mix,
+        p = (e) => (v(e) ? e.mix : void 0);
+      function x(e, t) {
+        let r = d(t()),
+          n = () => r.set(t());
+        return (
+          n(),
+          (0, u.L)(() => {
+            let t = () => g.Wi.preRender(n, !1, !0),
+              r = e.map((e) => e.on("change", t));
+            return () => {
+              r.forEach((e) => e()), (0, g.Pn)(n);
+            };
+          }),
+          r
+        );
+      }
+      function b(e, t) {
+        let r = (0, o.h)(() => []);
+        return x(e, () => {
+          r.length = 0;
+          let n = e.length;
+          for (let t = 0; t < n; t++) r[t] = e[t].get();
+          return t(r);
+        });
+      }
+      var y = r(7474);
+      function j(e) {
+        let { start: t, end: r, decimals: o = 0 } = e,
+          v = (0, a.useRef)(null),
+          j = (function (
+            e,
+            { root: t, margin: r, amount: n, once: i = !1 } = {}
+          ) {
+            let [l, o] = (0, a.useState)(!1);
+            return (
+              (0, a.useEffect)(() => {
+                if (!e.current || (i && l)) return;
+                let a = {
+                  root: (t && t.current) || void 0,
+                  margin: r,
+                  amount: n,
+                };
+                return (function (
+                  e,
+                  t,
+                  { root: r, margin: n, amount: a = "some" } = {}
+                ) {
+                  var i;
+                  let l =
+                      ("string" == typeof (i = e)
+                        ? (i = document.querySelectorAll(i))
+                        : i instanceof Element && (i = [i]),
+                      Array.from(i || [])),
+                    o = new WeakMap(),
+                    d = new IntersectionObserver(
+                      (e) => {
+                        e.forEach((e) => {
+                          let r = o.get(e.target);
+                          if (!!r !== e.isIntersecting) {
+                            if (e.isIntersecting) {
+                              let r = t(e);
+                              "function" == typeof r
+                                ? o.set(e.target, r)
+                                : d.unobserve(e.target);
+                            } else r && (r(e), o.delete(e.target));
+                          }
+                        });
+                      },
+                      {
+                        root: r,
+                        rootMargin: n,
+                        threshold: "number" == typeof a ? a : s[a],
+                      }
+                    );
+                  return l.forEach((e) => d.observe(e)), () => d.disconnect();
+                })(e.current, () => (o(!0), i ? void 0 : () => o(!1)), a);
+              }, [t, e, r, i, n]),
+              l
+            );
+          })(v, { once: !0, amount: 0.5 }),
+          k = d(t),
+          w = (function (e, t, r, n) {
+            if ("function" == typeof e)
+              return (function (e) {
+                (i.S1.current = []), e();
+                let t = x(i.S1.current, e);
+                return (i.S1.current = void 0), t;
+              })(e);
+            let a =
+              "function" == typeof t
+                ? t
+                : (function (...e) {
+                    let t = !Array.isArray(e[0]),
+                      r = t ? 0 : -1,
+                      n = e[0 + r],
+                      a = e[1 + r],
+                      s = e[2 + r],
+                      i = e[3 + r],
+                      l = (0, h.s)(a, s, { mixer: p(s[0]), ...i });
+                    return t ? l(n) : l;
+                  })(t, void 0, void 0);
+            return Array.isArray(e) ? b(e, a) : b([e], ([e]) => a(e));
+          })(
+            (function (e, t = {}) {
+              let { isStatic: r } = (0, a.useContext)(l._),
+                n = (0, a.useRef)(null),
+                s = d((0, c.i)(e) ? f(e.get()) : e),
+                i = (0, a.useRef)(s.get()),
+                o = (0, a.useRef)(() => {}),
+                h = () => {
+                  let e = n.current;
+                  e && 0 === e.time && e.sample(g.frameData.delta),
+                    v(),
+                    (n.current = (0, m.y)({
+                      keyframes: [s.get(), i.current],
+                      velocity: s.getVelocity(),
+                      type: "spring",
+                      restDelta: 0.001,
+                      restSpeed: 0.01,
+                      ...t,
+                      onUpdate: o.current,
+                    }));
+                },
+                v = () => {
+                  n.current && n.current.stop();
+                };
+              return (
+                (0, a.useInsertionEffect)(
+                  () =>
+                    s.attach(
+                      (e, t) =>
+                        r
+                          ? t(e)
+                          : ((i.current = e),
+                            (o.current = t),
+                            g.Wi.update(h),
+                            s.get()),
+                      v
+                    ),
+                  [JSON.stringify(t)]
+                ),
+                (0, u.L)(() => {
+                  if ((0, c.i)(e)) return e.on("change", (e) => s.set(f(e)));
+                }, [s]),
+                s
+              );
+            })(k, { damping: 30, stiffness: 100 }),
+            (e) => e.toFixed(o)
+          );
+        return (
+          (0, a.useEffect)(() => {
+            k.set(j ? r : t);
+          }, [t, r, j, k]),
+          (0, n.jsx)(y.E.span, { ref: v, children: w })
+        );
+      }
+    },
+    2030: function (e, t, r) {
+      "use strict";
+      r.d(t, {
+        BentoCard: function () {
+          return l;
+        },
+      });
+      var n = r(7437),
+        a = r(1994),
+        s = r(7474),
+        i = r(1080);
+      function l(e) {
+        let {
+          dark: t = !1,
+          className: r = "",
+          eyebrow: l,
+          title: o,
+          description: d,
+          graphic: c,
+          fade: u = [],
+        } = e;
+        return (0, n.jsxs)(s.E.div, {
+          initial: "idle",
+          whileHover: "active",
+          variants: { idle: {}, active: {} },
+          "data-dark": t ? "true" : void 0,
+          className: (0, a.W)(
+            r,
+            "group relative flex flex-col overflow-hidden rounded-lg",
+            "bg-white shadow-sm ring-1 ring-black/5",
+            "data-[dark]:bg-gray-800 data-[dark]:ring-white/15"
+          ),
+          children: [
+            (0, n.jsxs)("div", {
+              className: "relative h-80 shrink-0",
+              children: [
+                c,
+                u.includes("top") &&
+                  (0, n.jsx)("div", {
+                    className:
+                      "absolute inset-0 bg-gradient-to-b from-white to-50% group-data-[dark]:from-gray-800 group-data-[dark]:from-[-25%]",
+                  }),
+                u.includes("bottom") &&
+                  (0, n.jsx)("div", {
+                    className:
+                      "absolute inset-0 bg-gradient-to-t from-white to-50% group-data-[dark]:from-gray-800 group-data-[dark]:from-[-25%]",
+                  }),
+              ],
+            }),
+            (0, n.jsxs)("div", {
+              className: "relative p-10",
+              children: [
+                (0, n.jsx)(i.pm, { as: "h3", dark: t, children: l }),
+                (0, n.jsx)("p", {
+                  className:
+                    "mt-1 text-2xl/8 font-medium tracking-tight text-gray-950 group-data-[dark]:text-white",
+                  children: o,
+                }),
+                (0, n.jsx)("p", {
+                  className:
+                    "mt-2 max-w-[600px] text-sm/6 text-gray-600 group-data-[dark]:text-gray-400",
+                  children: d,
+                }),
+              ],
+            }),
+          ],
+        });
+      }
+    },
+    9489: function (e, t, r) {
+      "use strict";
+      r.d(t, {
+        default: function () {
+          return u;
+        },
+      });
+      var n = r(7437),
+        a = r(1886),
+        s = r(2265);
+      let i = s.forwardRef(function (e, t) {
+          let { title: r, titleId: n, ...a } = e;
+          return s.createElement(
+            "svg",
+            Object.assign(
+              {
+                xmlns: "http://www.w3.org/2000/svg",
+                fill: "none",
+                viewBox: "0 0 24 24",
+                strokeWidth: 1.5,
+                stroke: "currentColor",
+                "aria-hidden": "true",
+                "data-slot": "icon",
+                ref: t,
+                "aria-labelledby": n,
+              },
+              a
+            ),
+            r ? s.createElement("title", { id: n }, r) : null,
+            s.createElement("path", {
+              strokeLinecap: "round",
+              strokeLinejoin: "round",
+              d: "M12 6v12m6-6H6",
+            })
+          );
+        }),
+        l = s.forwardRef(function (e, t) {
+          let { title: r, titleId: n, ...a } = e;
+          return s.createElement(
+            "svg",
+            Object.assign(
+              {
+                xmlns: "http://www.w3.org/2000/svg",
+                fill: "none",
+                viewBox: "0 0 24 24",
+                strokeWidth: 1.5,
+                stroke: "currentColor",
+                "aria-hidden": "true",
+                "data-slot": "icon",
+                ref: t,
+                "aria-labelledby": n,
+              },
+              a
+            ),
+            r ? s.createElement("title", { id: n }, r) : null,
+            s.createElement("path", {
+              strokeLinecap: "round",
+              strokeLinejoin: "round",
+              d: "M18 12H6",
+            })
+          );
+        });
+      var o = r(7476),
+        d = r(1080);
+      let c = [
+        {
+          question: "Varf\xf6r ska jag inte bara anst\xe4lla en CRM-ansvarig?",
+          answer:
+            "Bra fr\xe5ga! F\xf6r det f\xf6rsta \xe4r skickliga CRM-specialister mycket eftertraktade, och om du hittar en blir den totala kostnaden (l\xf6n, pension, kontorsutrymme, arbetsredskap, semester etc.) i regel h\xf6gre \xe4n vad MessageButler kostar.\n\nDessutom kanske du inte alltid har tillr\xe4ckligt m\xe5nga kundutskick f\xf6r att h\xe5lla en heltidsresurs sysselsatt, vilket inneb\xe4r att du betalar f\xf6r tid som inte anv\xe4nds. Med v\xe5rt m\xe5nadsabonnemang kan du d\xe4remot pausa och \xe5teruppta din prenumeration n\xe4r som helst.",
+        },
+        {
+          question: "Beh\xf6ver vi installera n\xe5gra system?",
+          answer:
+            "Nej. Vi loggar in p\xe5 dina befintliga CRM- och analyssystem f\xf6r att hantera utskicken.",
+        },
+        {
+          question:
+            "Vad h\xe4nder om jag tycker att ett meddelande inte \xe4r tillr\xe4ckligt bra?",
+          answer:
+            "Ingen fara, vi justerar tills du \xe4r 100 % n\xf6jd och schemal\xe4gger utskicket f\xf6rst efter att du har godk\xe4nt det.",
+        },
+        {
+          question:
+            "Finns det n\xe5gon gr\xe4ns f\xf6r hur m\xe5nga meddelanden vi kan skicka?",
+          answer:
+            "Du kan beg\xe4ra s\xe5 m\xe5nga utskick du vill, och vi f\xe4rdigst\xe4ller dem i tur och ordning. Du kan f\xf6rv\xe4nta dig att ett meddelande \xe4r klart inom 48 timmar.\n\nVi har ingen gr\xe4ns f\xf6r antalet mottagare. Oavsett om du vill skicka ett meddelande till 10 personer eller 10 miljoner - vi l\xf6ser det.",
+        },
+        {
+          question: "Hur administreras utskicken?",
+          answer:
+            "All administration sker via en Notion-board som du f\xe5r tillg\xe5ng till vid start. H\xe4r l\xe4gger du in nya utskick och har koll p\xe5 statusen under hela processen – enkelt och \xf6versk\xe5dligt.",
+        },
+        {
+          question: "Vem utf\xf6r arbetet?",
+          answer: (0, n.jsxs)(n.Fragment, {
+            children: [
+              "Tro det eller ej, MessageButler \xe4r en enmansbyr\xe5. Detta inneb\xe4r att du arbetar direkt med mig, Pontus.",
+              (0, n.jsx)("br", {}),
+              (0, n.jsx)("br", {}),
+              "Min LinkedIn: ",
+              " ",
+              (0, n.jsx)("a", {
+                href: "https://www.linkedin.com/in/pontus-andersson-a5a304a4/",
+                target: "_blank",
+                rel: "noopener noreferrer",
+                className:
+                  "font-semibold text-indigo-600 hover:text-indigo-500",
+                children: "Pontus Andersson",
+              }),
+            ],
+          }),
+        },
+        {
+          question: "\xc4r det n\xe5gon bindningstid?",
+          answer:
+            "Nej. Du betalar l\xf6pande f\xf6r en m\xe5nad i taget och kan pausa eller avsluta n\xe4r som helst.",
+        },
+        {
+          question: "Kan du f\xf6rklara hur pausfunktionen fungerar?",
+          answer:
+            "Absolut! Du betalar i f\xf6rskott f\xf6r en m\xe5nad i taget och kan pausa din prenumeration n\xe4r som helst. Till exempel, om du har anv\xe4nt tj\xe4nsten i tv\xe5 veckor och v\xe4ljer att pausa, s\xe5 finns de \xe5terst\xe5ende tv\xe5 veckorna kvar att anv\xe4nda vid ett senare tillf\xe4lle. Du kan pausa max fyra g\xe5nger om \xe5ret.",
+        },
+        {
+          question: "Vilken mjukvara anv\xe4nder ni?",
+          answer:
+            "Vi anpassar oss till ditt CRM-system (Klaviyo, Mailchimp, Voyado, etc.) och analysverktyg (Google Analytics, Matomo, etc.)\n\nF\xf6r design anv\xe4nder vi fr\xe4mst Figma. F\xf6r djupare analys anv\xe4nds en rad verktyg, men fr\xe4mst Python/Pandas.",
+        },
+      ];
+      function u() {
+        return (0, n.jsxs)(o.W, {
+          className: "py-32",
+          children: [
+            (0, n.jsx)(d.X6, {
+              as: "h1",
+              id: "faq",
+              children: "Vanliga fr\xe5gor",
+            }),
+            (0, n.jsxs)("section", {
+              className: "mt-6 grid grid-cols-1 lg:grid-cols-12 lg:gap-12",
+              children: [
+                (0, n.jsx)("div", {
+                  className: "max-w-lg lg:col-span-5",
+                  children: (0, n.jsxs)("p", {
+                    className: "mt-6 text-sm/6 text-gray-600",
+                    children: [
+                      "Kan du inte hitta svaret p\xe5 din fr\xe5ga? ",
+                      (0, n.jsx)("br", {}),
+                      "H\xf6r av dig till",
+                      " ",
+                      (0, n.jsx)("a", {
+                        href: "mailto:pontus@messagebutler.agency",
+                        className:
+                          "font-semibold text-indigo-600 hover:text-indigo-500",
+                        children: "pontus@messagebutler.agency",
+                      }),
+                      ".",
+                    ],
+                  }),
+                }),
+                (0, n.jsx)("div", {
+                  className: "max-lg:mt-16 lg:col-span-7",
+                  children: (0, n.jsx)("dl", {
+                    className: "space-y-4 divide-y divide-gray-900/10",
+                    children: c.map((e) =>
+                      (0, n.jsx)(
+                        a.Disclosure,
+                        {
+                          as: "div",
+                          className: "pt-4",
+                          children: (t) => {
+                            let { open: r } = t;
+                            return (0, n.jsxs)(n.Fragment, {
+                              children: [
+                                (0, n.jsx)("dt", {
+                                  children: (0, n.jsxs)(a.DisclosureButton, {
+                                    className:
+                                      "group flex w-full items-start justify-between text-left text-gray-900",
+                                    onClick: () => {
+                                      !r &&
+                                        window.plausible &&
+                                        window.plausible("FAQQuestionOpened", {
+                                          props: { question: e.question },
+                                        });
+                                    },
+                                    children: [
+                                      (0, n.jsx)("span", {
+                                        className:
+                                          "text-1xl font-medium tracking-tight",
+                                        children: e.question,
+                                      }),
+                                      (0, n.jsxs)("span", {
+                                        className: "ml-6 flex h-7 items-center",
+                                        children: [
+                                          (0, n.jsx)(i, {
+                                            "aria-hidden": "true",
+                                            className:
+                                              "size-6 group-data-[open]:hidden",
+                                          }),
+                                          (0, n.jsx)(l, {
+                                            "aria-hidden": "true",
+                                            className:
+                                              "size-6 group-[&:not([data-open])]:hidden",
+                                          }),
+                                        ],
+                                      }),
+                                    ],
+                                  }),
+                                }),
+                                (0, n.jsx)(a.DisclosurePanel, {
+                                  as: "dd",
+                                  className: "mt-2 pr-12",
+                                  children: (0, n.jsx)("div", {
+                                    className: "mt-3 text-sm/6 text-gray-600",
+                                    children: e.answer,
+                                  }),
+                                }),
+                              ],
+                            });
+                          },
+                        },
+                        e.question
+                      )
+                    ),
+                  }),
+                }),
+              ],
+            }),
+          ],
+        });
+      }
+    },
+    9685: function (e, t, r) {
+      "use strict";
+      r.d(t, {
+        LinkedAvatars: function () {
+          return m;
+        },
+      });
+      var n = r(7437),
+        a = r(2265);
+      let s = a.forwardRef(function ({ title: e, titleId: t, ...r }, n) {
+        return a.createElement(
+          "svg",
+          Object.assign(
+            {
+              xmlns: "http://www.w3.org/2000/svg",
+              viewBox: "0 0 16 16",
+              fill: "currentColor",
+              "aria-hidden": "true",
+              "data-slot": "icon",
+              ref: n,
+              "aria-labelledby": t,
+            },
+            r
+          ),
+          e ? a.createElement("title", { id: t }, e) : null,
+          a.createElement("path", {
+            fillRule: "evenodd",
+            d: "M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353 4.493-6.74a.75.75 0 0 1 1.04-.207Z",
+            clipRule: "evenodd",
+          })
+        );
+      });
+      var i = r(1994),
+        l = r(7474);
+      let o = { duration: 0.75, repeat: 1 / 0, repeatDelay: 1.25 };
+      function d() {
+        return (0, n.jsx)("svg", {
+          viewBox: "0 0 500 500",
+          fill: "none",
+          className: (0, i.W)(
+            "col-start-1 row-start-1 size-full",
+            "[mask-composite:intersect] [mask-image:linear-gradient(to_bottom,black_90%,transparent),radial-gradient(circle,rgba(0,0,0,1)_0%,rgba(0,0,0,0)_100%)]"
+          ),
+          children: Array.from(Array(42).keys()).map((e) =>
+            (0, n.jsx)(
+              l.E.circle,
+              {
+                variants: {
+                  idle: { scale: 1, strokeOpacity: 0.15 },
+                  active: {
+                    scale: [1, 1.08, 1],
+                    strokeOpacity: [0.15, 0.3, 0.15],
+                    transition: { ...o, delay: 0.05 * e },
+                  },
+                },
+                cx: "250",
+                cy: "250",
+                r: 14 * e + 4,
+                className: "stroke-white",
+              },
+              e
+            )
+          ),
+        });
+      }
+      function c() {
+        return (0, n.jsx)("div", {
+          className:
+            "z-10 col-start-1 row-start-1 flex items-center justify-center",
+          children: (0, n.jsx)(l.E.div, {
+            variants: {
+              idle: { scale: 1 },
+              active: {
+                scale: [1, 1.15, 1],
+                transition: { ...o, duration: 0.75 },
+              },
+            },
+            className:
+              "flex size-6 items-center justify-center rounded-full bg-gradient-to-t from-green-500 to-green-300 shadow",
+            children: (0, n.jsx)(s, { className: "size-4 fill-white" }),
+          }),
+        });
+      }
+      function u() {
+        return (0, n.jsx)("div", {
+          className: "z-10 col-start-1 row-start-1",
+          children: (0, n.jsxs)("div", {
+            className:
+              "mx-auto flex size-full max-w-md items-center justify-around",
+            children: [
+              (0, n.jsx)("img", {
+                alt: "",
+                src: "/linked-avatars/me.jpg",
+                className:
+                  "size-20 rounded-full bg-white/15 ring-4 ring-white/10",
+              }),
+              (0, n.jsx)("img", {
+                alt: "",
+                src: "/linked-avatars/manager.jpg",
+                className:
+                  "size-20 rounded-full bg-white/15 ring-4 ring-white/10",
+              }),
+            ],
+          }),
+        });
+      }
+      function m() {
+        return (0, n.jsxs)("div", {
+          "aria-hidden": "true",
+          className: "isolate mx-auto grid h-full grid-cols-1",
+          children: [(0, n.jsx)(d, {}), (0, n.jsx)(u, {}), (0, n.jsx)(c, {})],
+        });
+      }
+    },
+    6950: function (e, t, r) {
+      "use strict";
+      r.r(t),
+        r.d(t, {
+          LogoCluster: function () {
+            return u;
+          },
+        });
+      var n = r(7437),
+        a = r(1994),
+        s = r(7474),
+        i = r(4016);
+      function l(e) {
+        let { size: t, delay: r, opacity: i } = e;
+        return (0, n.jsx)(s.E.div, {
+          variants: {
+            idle: { width: "".concat(t, "px"), height: "".concat(t, "px") },
+            active: {
+              width: [
+                "".concat(t, "px"),
+                "".concat(t + 10, "px"),
+                "".concat(t, "px"),
+              ],
+              height: [
+                "".concat(t, "px"),
+                "".concat(t + 10, "px"),
+                "".concat(t, "px"),
+              ],
+              transition: {
+                duration: 0.75,
+                repeat: 1 / 0,
+                repeatDelay: 1.25,
+                ease: "easeInOut",
+                delay: r,
+              },
+            },
+          },
+          style: { "--opacity": i },
+          className: (0, a.W)(
+            "absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full",
+            "bg-[radial-gradient(circle,transparent_25%,color-mix(in_srgb,_theme(colors.blue.500)_var(--opacity),transparent)_100%)]",
+            "ring-1 ring-inset ring-blue-500/[8%]"
+          ),
+        });
+      }
+      function o() {
+        return (0, n.jsxs)("div", {
+          className: "absolute inset-0",
+          children: [
+            (0, n.jsx)(l, { size: 528, opacity: "3%", delay: 0.45 }),
+            (0, n.jsx)(l, { size: 400, opacity: "5%", delay: 0.3 }),
+            (0, n.jsx)(l, { size: 272, opacity: "5%", delay: 0.15 }),
+            (0, n.jsx)(l, { size: 144, opacity: "10%", delay: 0 }),
+            (0, n.jsx)("div", {
+              className: "absolute inset-0 bg-gradient-to-t from-white to-35%",
+            }),
+          ],
+        });
+      }
+      function d() {
+        return (0, n.jsx)("div", {
+          className:
+            "absolute left-44 top-32 flex size-16 items-center justify-center rounded-full bg-white shadow ring-1 ring-black/5",
+          children: (0, n.jsx)(i.Mark, { className: "h-9 fill-black" }),
+        });
+      }
+      function c(e) {
+        let { src: t, left: r, top: a, hover: i } = e;
+        return (0, n.jsx)(s.E.img, {
+          variants: {
+            idle: { x: 0, y: 0, rotate: 0 },
+            active: {
+              x: [0, i.x, 0],
+              y: [0, i.y, 0],
+              rotate: [0, i.rotate, 0],
+              transition: {
+                duration: 0.75,
+                repeat: 1 / 0,
+                repeatDelay: 1.25,
+                ease: "easeInOut",
+                delay: i.delay,
+              },
+            },
+          },
+          alt: "",
+          src: t,
+          style: { left: r, top: a },
+          className:
+            "absolute size-16 rounded-full bg-white shadow ring-1 ring-black/5",
+        });
+      }
+      function u() {
+        return (0, n.jsxs)("div", {
+          "aria-hidden": "true",
+          className: "relative h-full overflow-hidden",
+          children: [
+            (0, n.jsx)(o, {}),
+            (0, n.jsxs)("div", {
+              className: "absolute left-1/2 h-full w-[26rem] -translate-x-1/2",
+              children: [
+                (0, n.jsx)(d, {}),
+                (0, n.jsx)(c, {
+                  src: "/logo-cluster/career-builder.svg",
+                  left: 360,
+                  top: 144,
+                  hover: { x: 6, y: 1, rotate: 5, delay: 0.38 },
+                }),
+                (0, n.jsx)(c, {
+                  src: "/logo-cluster/dribbble.svg",
+                  left: 285,
+                  top: 20,
+                  hover: { x: 4, y: -5, rotate: 6, delay: 0.3 },
+                }),
+                (0, n.jsx)(c, {
+                  src: "/logo-cluster/glassdoor.svg",
+                  left: 255,
+                  top: 210,
+                  hover: { x: 3, y: 5, rotate: 7, delay: 0.2 },
+                }),
+                (0, n.jsx)(c, {
+                  src: "/logo-cluster/linkedin.svg",
+                  left: 144,
+                  top: 40,
+                  hover: { x: -2, y: -5, rotate: -6, delay: 0.15 },
+                }),
+                (0, n.jsx)(c, {
+                  src: "/logo-cluster/upwork.svg",
+                  left: 36,
+                  top: 56,
+                  hover: { x: -4, y: -5, rotate: -6, delay: 0.35 },
+                }),
+                (0, n.jsx)(c, {
+                  src: "/logo-cluster/we-work-remotely.svg",
+                  left: 96,
+                  top: 176,
+                  hover: { x: -3, y: 5, rotate: 3, delay: 0.15 },
+                }),
+              ],
+            }),
+          ],
+        });
+      }
+    },
+    9564: function (e, t, r) {
+      "use strict";
+      r.d(t, {
+        Map: function () {
+          return i;
+        },
+      });
+      var n = r(7437),
+        a = r(7474);
+      function s(e) {
+        let { src: t, top: r, offset: s, delay: i } = e;
+        return (0, n.jsxs)(a.E.div, {
+          variants: {
+            idle: { scale: 0, opacity: 0, rotateX: 0, rotate: 0, y: 0 },
+            active: { y: [-20, 0, 4, 0], scale: [0.75, 1], opacity: [0, 1] },
+          },
+          transition: { duration: 0.25, delay: i, ease: "easeOut" },
+          style: { "--offset": "".concat(s, "px"), top: r },
+          className:
+            "absolute left-[calc(50%+var(--offset))] size-[38px] drop-shadow-[0_3px_1px_rgba(0,0,0,.15)]",
+          children: [
+            (0, n.jsxs)("svg", {
+              fill: "none",
+              viewBox: "0 0 38 38",
+              className: "absolute size-full",
+              children: [
+                (0, n.jsx)("path", {
+                  d: "M29.607 5.193c5.858 5.857 5.858 15.355 0 21.213l-9.9 9.9-.707.706-.708-.708-9.899-9.898c-5.857-5.858-5.857-15.356 0-21.213 5.858-5.858 15.356-5.858 21.214 0Z",
+                  className: "fill-black/5",
+                }),
+                (0, n.jsx)("path", {
+                  d: "m28.9 25.698-9.9 9.9-9.9-9.9C3.634 20.232 3.634 11.367 9.1 5.9 14.569.432 23.433.432 28.9 5.9c5.467 5.468 5.467 14.332 0 19.8Z",
+                  className: "fill-white",
+                }),
+              ],
+            }),
+            (0, n.jsx)("img", {
+              alt: "",
+              src: t,
+              className: "absolute left-[7px] top-[4px] size-6 rounded-full",
+            }),
+          ],
+        });
+      }
+      function i() {
+        return (0, n.jsxs)("div", {
+          "aria-hidden": "true",
+          className: "relative size-full",
+          children: [
+            (0, n.jsx)("div", {
+              className:
+                "absolute inset-0 bg-[url(/world_map.png)] bg-[length:591px_287px] bg-[center_-0px] bg-no-repeat [mask-image:linear-gradient(to_bottom,black_50%,transparent)]",
+            }),
+            (0, n.jsxs)("div", {
+              className: "absolute inset-0",
+              children: [
+                (0, n.jsx)(s, {
+                  src: "/map/1.jpg",
+                  top: 50,
+                  offset: -190,
+                  delay: 0.15,
+                }),
+                (0, n.jsx)(s, {
+                  src: "/map/2.jpg",
+                  top: 80,
+                  offset: -250,
+                  delay: 0.4,
+                }),
+                (0, n.jsx)(s, {
+                  src: "/map/3.jpg",
+                  top: 10,
+                  offset: -25,
+                  delay: 0.3,
+                }),
+                (0, n.jsx)(s, {
+                  src: "/map/4.jpg",
+                  top: 200,
+                  offset: 190,
+                  delay: 0.6,
+                }),
+                (0, n.jsx)(s, {
+                  src: "/map/5.jpg",
+                  top: 104,
+                  offset: -80,
+                  delay: 0.8,
+                }),
+              ],
+            }),
+          ],
+        });
+      }
+    },
+  },
+  function (e) {
+    e.O(0, [501, 3, 807, 971, 117, 744], function () {
+      return e((e.s = 5105));
+    }),
+      (_N_E = e.O());
+  },
+]);
